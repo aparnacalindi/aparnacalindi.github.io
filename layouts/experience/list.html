@@ -48,20 +48,23 @@
 {{- $class = "post-entry tag-entry" }}
 {{- end }}
 
-<article class="{{ $class }}">
-  {{- $isHidden := (.Param "cover.hiddenInList") | default (.Param "cover.hidden") | default false }}
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">
-      {{- .Title }}
-    </h2>
-    <h5>
-      {{- .Params.company}}
-    </h5>
-  </header>
-  <a class="entry-link" href="{{ .Params.link }}" target="_blank" rel="noopener"></a>
-    <h6>
-  {{ .Params.start_date | time.Format "January 2006" }} - {{ if .Params.grad_date }}{{ .Params.grad_date | time.Format "January 2006" }}{{ else }}Present{{ end }}
-</h6>
+<article class="{{ $class }}" style="display: flex; flex-direction: row; justify-content: space-between;">
+  <div style="display: flex; flex-direction: column; justify-content: space-between;">
+      <header class="entry-header">
+        <h2 class="entry-hint-parent">
+          {{- .Params.title }}
+        </h2>
+        <h5 style="font-weight: normal;">
+          {{- .Params.company }}
+        </h5>
+      </header>
+      <h6 style="font-weight: normal;">
+      {{ .Params.start_date | time.Format "January 2006" }} - {{ if .Params.grad_date }}{{ .Params.grad_date | time.Format "January 2006" }}{{ else }}Present{{ end }}
+    </h6>
+  </div>
+  <div class="edu-logo">
+      <img src="{{ .Params.logo | relURL }}" alt="{{ .Params.uni }}" style="height: 80px; width: auto;">
+  </div>
 </article>
 {{- end }}
 

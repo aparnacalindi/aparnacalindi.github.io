@@ -6,6 +6,7 @@ end_date:
 weight: -4
 tags: []
 link: "https://ehrlichlab.squarespace.com/"
+logo: "ut.svg"
 build:
   render: false
 ---

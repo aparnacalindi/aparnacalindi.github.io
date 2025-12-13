@@ -6,6 +6,7 @@ end_date: 2021-05-01
 weight: -2
 tags: []
 link: "https://www.stjude.org/research/labs/obeng-lab.html"
+logo: "st.svg"
 build:
   render: false
 ---

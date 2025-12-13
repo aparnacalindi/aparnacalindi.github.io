@@ -6,6 +6,7 @@ end_date: 2022-07-01
 weight: -3
 tags: []
 link: "https://hsph.harvard.edu/research/wirth-lab/"
+logo: "har.png"
 build:
   render: false
 ---
