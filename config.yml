@@ -1,0 +1,94 @@
+baseURL: "https://aparnacalindi.github.io/"
+title: Aparna Calindi
+theme: PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+pagination:
+  pagerSize: 20
+
+taxonomies:
+  tag: tags
+
+menu:
+  main:
+    - name: Papers
+      url: papers/
+      weight: 1
+    - name: Education
+      url: education/
+      weight: 2
+    - name: Experience
+      url: experience/
+      weight: 3
+
+params:
+  description: "This website hosts Aparna Calindi's research papers, education, experience, and contact information."
+  author: Aparna Calindi
+  # googleAnalyticsID: "G-XXXXX"
+  DateFormat: "January 2006"
+  defaultTheme: light
+  hideFooter: false
+  disableThemeToggle: true
+  ShowShareButtons: false
+  ShowReadingTime: false
+  disableSpecial1stPost: true
+  disableAnchoredHeadings: true
+  ShowPostNavLinks: false
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowAllPagesInArchive: false
+  MainSections: ["papers", "education", "experience"]
+  ShowToc: false
+  disableScrollToTop: true
+  TocOpen: true
+  ShowWordCount: false
+  UseHugoToc: true
+  comments: false
+  math: true
+  profileMode:
+    enabled: true
+    title: Aparna Calindi
+    subtitle: "I am a cell and molecular biology PhD candidate at University of Texas at Austin working with Dr. Lauren Ehrlich. Prior to joining UT Austin, I received my undergradute degree at University of Houston. I am currently working on understanding the role of thymic dendritic cells in establishing central tolerance."
+    imageUrl: "picture.jpeg"
+    imageWidth: 248
+    imageHeight: 300
+    buttons:
+      - name: Papers
+        url: papers/
+      - name: Education
+        url: education/
+      - name: Experience
+        url: experience
+
+  socialIcons:
+    - name: Google Scholar
+      url: https://scholar.google.com/citations?user=IDp-SAMAAAAJ&hl=en
+    - name: LinkedIn
+      url: https://www.linkedin.com/in/aparna-calindi/
+    - name: Email
+      url: mailto:aparnacalindi@utexas.edu
+    - name: CV
+      url: cv.pdf
+
+  assets:
+    disableScrollBarStyle: true
+  cover:
+    hiddenInList: false
+    hiddenInSingle: true
+  label:
+    text: "Aparna Calindi"
+    icon: favicon.ico
+    iconHeight: 18
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    guessSyntax: true
+    style: autumn
+  tableOfContents:
+    endLevel: 2
+    ordered: false
+    startLevel: 2
