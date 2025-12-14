@@ -59,7 +59,7 @@
         </h5>
       </header>
       <h6 style="font-weight: normal;">
-      {{ .Params.start_date | time.Format "January 2006" }} - {{ if .Params.grad_date }}{{ .Params.grad_date | time.Format "January 2006" }}{{ else }}Present{{ end }}
+      {{ .Params.start_date | time.Format "January 2006" }} - {{ if .Params.end_date }}{{ .Params.end_date | time.Format "January 2006" }}{{ else }}Present{{ end }}
     </h6>
   </div>
   <div class="edu-logo">
