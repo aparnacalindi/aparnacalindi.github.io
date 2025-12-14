@@ -59,9 +59,9 @@
     </h5>
   </header>
   <a class="entry-link" href="{{ .Params.publish.url }}" target="_blank" rel="noopener"></a>
-  <div class="entry-content">
+  <!-- <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-  </div>
+  </div> -->
   {{- if not (.Param "hideMeta") }}
   <footer class="entry-footer">
     {{- partial "post_meta.html" . -}}
